@@ -1,0 +1,30 @@
+[
+  {
+    "id": "gift-1",
+    "giftType": "coupon",
+    "title": "Free Coffee Voucher",
+    "content": "Redeemable anytime for one massive double-shot iced latte with extra caramel at your favorite cafe! ☕",
+    "isOpened": false
+  },
+  {
+    "id": "gift-2",
+    "giftType": "secret_message",
+    "title": "A Hidden Truth",
+    "content": "Secret Message: I actually accidentally deleted half of our first codebase, but spent the night rewriting it from memory so you wouldn't notice. Now you know! 😉",
+    "isOpened": false
+  },
+  {
+    "id": "gift-3",
+    "giftType": "qr_code",
+    "title": "Golden Ticket QR",
+    "content": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=Golden+Ticket+Redeemed+:+Dinner+on+me!",
+    "isOpened": false
+  },
+  {
+    "id": "gift-4",
+    "giftType": "photo",
+    "title": "Secret Polaroid",
+    "content": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop",
+    "isOpened": false
+  }
+]

@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts mapping */
+  --font-sans: var(--font-poppins), sans-serif;
+  --font-poppins: var(--font-poppins), sans-serif;
+  --font-nunito: var(--font-nunito), sans-serif;
+  --font-caveat: var(--font-caveat), cursive;
+  --font-patrick: var(--font-patrick-hand), cursive;
+
+  /* Custom luxury pastel color palette */
+  --color-cream: #FFFDF9;
+  --color-lavender: #E8DEF8;
+  --color-pink: #FADADD;
+  --color-sky: #E0F2FE;
+  --color-yellow: #FFF9E6;
+  --color-mint: #E6F4EA;
+  --color-purple: #D5C2EE;
+  
+  --color-pastel-red: #FCE8E6;
+  --color-pastel-blue: #E8F0FE;
+  --color-pastel-green: #E6F4EA;
+  --color-pastel-yellow: #FEF7E0;
+
+  /* Animations definition */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float-delayed 8s ease-in-out infinite;
+  --animate-pulse-slow: pulseSlow 4s ease-in-out infinite;
+  --animate-sway: sway 4s ease-in-out infinite;
+  --animate-shake: shake 0.4s ease-in-out;
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-bounce-slow: bounce 3s ease-in-out infinite;
+}
+
+/* Custom Keyframes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+@keyframes float-delayed {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(-3deg);
+  }
+}
+
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 60% {
+    transform: translateX(-8px);
+  }
+  40%, 80% {
+    transform: translateX(8px);
+  }
+}
+
+/* Base Customizations */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #FFFDF9;
+  background-image: 
+    radial-gradient(#FADADD 1.5px, transparent 1.5px), 
+    radial-gradient(#E8DEF8 1.5px, #FFFDF9 1.5px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  -webkit-tap-highlight-color: transparent;
+  /* Prevent layout shifts from scrollbar appearing */
+  scrollbar-gutter: stable;
+}
+
+/* Use GPU compositing for animations to prevent layout jank */
+.animate-float,
+.animate-bounce,
+.animate-spin,
+.animate-pulse {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* content-visibility for deferred rendering of below-fold content */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+
+/* Elegant custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFDF9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FADADD;
+  border-radius: 9999px;
+  border: 2px solid #FFFDF9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D5C2EE;
+}
+
+/* Custom Glassmorphism styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(224, 200, 220, 0.15);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px 0 rgba(224, 200, 220, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(250, 218, 221, 0.8);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px 0 rgba(224, 200, 220, 0.2);
+}
+
+/* Notebook paper texture style */
+.notebook-paper {
+  background-color: #FFFDF9;
+  background-image: 
+    linear-gradient(#E0F2FE 1px, transparent 1px),
+    linear-gradient(90deg, #FADADD 1px, transparent 1px);
+  background-size: 100% 28px, 100% 100%;
+  background-position: 0 4px, 40px 0;
+  border-left: 2px solid #FADADD;
+  line-height: 28px;
+}
+
+/* Scratch card overlay styling */
+.scratch-container {
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Apple-style smooth transitions */
+.smooth-transition {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}

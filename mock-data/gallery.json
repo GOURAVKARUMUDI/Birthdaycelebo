@@ -1,0 +1,34 @@
+[
+  {
+    "id": "mem-1",
+    "title": "First Meeting Cafe",
+    "type": "date",
+    "url": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=800&auto=format&fit=crop",
+    "caption": "Where it all began. The coffee was cold, but the conversation lasted for hours.",
+    "date": "2024-04-12"
+  },
+  {
+    "id": "mem-2",
+    "title": "Beach Roadtrip Sunset",
+    "type": "trip",
+    "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+    "caption": "Chasing waves and singing off-key to retro songs in the car.",
+    "date": "2024-08-20"
+  },
+  {
+    "id": "mem-3",
+    "title": "Late Night Coding Sessions",
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop",
+    "caption": "Solving compiler errors at 3 AM while drinking bubble tea.",
+    "date": "2025-01-15"
+  },
+  {
+    "id": "mem-4",
+    "title": "The Surprise Balloon Fight",
+    "type": "date",
+    "url": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800&auto=format&fit=crop",
+    "caption": "You thought it was a formal dinner, but it was a water balloon battle!",
+    "date": "2025-05-04"
+  }
+]
